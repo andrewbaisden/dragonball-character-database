@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=BenchNine');
+:root {
+    --grey: #343436;
+}
+
+html {
+    font-size: 62.5%;
+    /* font-size 1em = 10px on default browser settings */
+}
+
+body {
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+    background: #ffffff;
+    font-family: 'BenchNine', sans-serif;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-search {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr;
+    background: #31335A;
+    color: #ffffff;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(217, 217, 217, 1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(217, 217, 217, 1);
+    box-shadow: 10px 10px 5px 0px rgba(217, 217, 217, 1);
+}
+
+.container-search p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.alert {
+    background: #F70431;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.header img {
+    display: grid;
+    justify-self: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.character-list ul {
+    display: flex;
+    flex-flow: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.character-list ul li {
+    padding: 0 10px;
+    margin: 2px;
+    border: 1px solid #FF8D00;
+}
+
+.search-characters {
+    font-size: 20px;
+    padding: 10px;
+    background: rgb(235, 235, 235);
+    border: 0;
+}
+
+.profile {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.character-profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 300px;
+    background: #ffffff;
+    -webkit-box-shadow: 10px 10px 30px 0px rgba(217, 217, 217, 1);
+    -moz-box-shadow: 10px 10px 30px 0px rgba(217, 217, 217, 1);
+    box-shadow: 10px 10px 30px 0px rgba(217, 217, 217, 1);
+}
+
+.character-profile p {
+    font-size: 24px;
+}
+
+.character-profile img {
+    width: 100%;
+    max-width: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+    /* body {
+        background: red;
+    } */
+    .profile {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
