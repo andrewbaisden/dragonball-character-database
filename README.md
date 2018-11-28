@@ -9,9 +9,13 @@ You need to have the REST API Server and the App running together at the same ti
 1. Run the command `npm install` to install node_modules
 2. Run the command `npm run start` to start the REST API Server
 
+The backend server is running locally, on port 3000 http://localhost:3000/
+
 ## client folder
 
 1. Run the command `npm install` to install node_modules
 2. Run the command `npm run start` to start the app
 
-There is an online demo version working here 
+The client app is running locally, on port 5000 http://localhost:5000/
+
+There is an online demo version of the app here https://dbz-database-client.herokuapp.com/

@@ -2,10 +2,10 @@
   "name": "dragonballz-fighter-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files '**/*.html, **/*.css, **/*.js' --port 5000 --browser 'FirefoxDeveloperEdition'",
+    "start": "node server.js",
     "json:server": "json-server --watch db.json --port 3000"
   },
   "author": "Andrew Baisden",
@@ -21,6 +21,8 @@
     "prettier": "1.14.3"
   },
   "dependencies": {
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
   }
 }
