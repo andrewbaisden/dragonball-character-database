@@ -19,5 +19,8 @@
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.11.1",
     "prettier": "1.14.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
   }
 }

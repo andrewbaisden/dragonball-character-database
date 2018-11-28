@@ -7,7 +7,7 @@ class UI {
 
   // Display profile in the ui
   showProfile(user) {
-    console.log(user);
+    // console.log('The character object', user);
 
     // Loop over the character abilities, and output in a li tag
     const abilities = user.abilities.map(ab => ab);
@@ -93,7 +93,7 @@ class UI {
 const ui = new UI();
 
 async function getUser(user) {
-  const profileResponse = await fetch(`http://localhost:3000/characters/${user}`);
+  const profileResponse = await fetch(`http://localhost:3000/${user}`);
 
   const profile = await profileResponse.json().then(data => {
     if (JSON.stringify(data) === '{}') {
@@ -118,7 +118,7 @@ searchUser.addEventListener('keyup', e => {
   // Get input text
   const userText = e.target.value;
   const userTextLowerCase = userText.toLowerCase();
-  console.log(userTextLowerCase);
+  // console.log(userTextLowerCase);
 
   if (userTextLowerCase !== '') {
     // Make http call
