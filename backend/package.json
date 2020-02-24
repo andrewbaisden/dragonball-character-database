@@ -1,21 +1,23 @@
 {
-  "name": "backened",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-  },
-  "author": "Andrew Baisden",
-  "license": "MIT",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "ejs": "^2.7.4",
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.4"
-  }
+	"name": "backened",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node app.js",
+		"servers": "concurrently \"npm run start\" \"cd ../client && npm run start\" "
+	},
+	"author": "Andrew Baisden",
+	"license": "MIT",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"concurrently": "^5.1.0",
+		"cors": "^2.8.5",
+		"ejs": "^2.7.4",
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"nodemon": "^1.19.4"
+	}
 }
