@@ -1,6 +1,6 @@
 # Dragonball Z Character Database
 
-![Dragonball Z Character Database](https://res.cloudinary.com/d74fh3kw/image/upload/v1582567172/dbz_character_database_hc5lev.jpg 'Dragonball Z Character Database')
+![Dragonball Z Character Database](/img/dragonball-character-database.jpeg 'Dragonball Z Character Database')
 
 ## Installation and Setup
 
