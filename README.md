@@ -18,8 +18,17 @@ You need to have the REST API Server and the Client App server running together 
 
 ## Running the app
 
+1. Open the `app.js` file inside of client/public/js/app.js
+2. Uncomment the variable for `localAPI` and replace the variable inside of `profileResponse` see the code snippet below.
+
+```javascript
+const localAPI = 'http://localhost:3000/';
+// const onlineAPI = 'https://dbz-database-backend.onrender.com/';
+const profileResponse = await fetch(`${localAPI}${user}`);
+```
+
 `cd` into the backend folder and run `npm run servers`
 
-The client app is running locally, on port 5000 http://localhost:5000/
+The client app is running locally, on port 8080 http://localhost:8080/
 
 The backend server is running locally, on port 3000 http://localhost:3000/

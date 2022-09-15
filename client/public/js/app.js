@@ -10,9 +10,9 @@ class UI {
     // console.log('The character object', user);
 
     // Loop over the character abilities, and output in a li tag
-    const abilities = user.abilities.map(ab => ab);
+    const abilities = user.abilities.map((ab) => ab);
     let specials = '';
-    abilities.forEach(element => {
+    abilities.forEach((element) => {
       specials += `
        <li>${element}</li>
        `;
@@ -93,9 +93,11 @@ class UI {
 const ui = new UI();
 
 async function getUser(user) {
-  const profileResponse = await fetch(`http://localhost:3000/${user}`);
+  // const localAPI = 'http://localhost:3000/';
+  const onlineAPI = 'https://dbz-database-backend.onrender.com/';
+  const profileResponse = await fetch(`${onlineAPI}${user}`);
 
-  const profile = await profileResponse.json().then(data => {
+  const profile = await profileResponse.json().then((data) => {
     if (JSON.stringify(data) === '{}') {
       // Show alert
       console.log('No Character Found');
@@ -114,7 +116,7 @@ async function getUser(user) {
 const searchUser = document.querySelector('.search-characters');
 
 // Search input event listener
-searchUser.addEventListener('keyup', e => {
+searchUser.addEventListener('keyup', (e) => {
   // Get input text
   const userText = e.target.value;
   const userTextLowerCase = userText.toLowerCase();
