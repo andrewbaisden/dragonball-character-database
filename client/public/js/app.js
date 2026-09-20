@@ -1,6 +1,6 @@
 const isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
 const API_BASE = isLocal
-  ? 'http://localhost:3000/'
+  ? 'http://localhost:8080/'
   : 'https://dbz-database-backend.onrender.com/';
 
 const FALLBACK_ROSTER = [

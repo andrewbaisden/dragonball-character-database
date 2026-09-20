@@ -30,7 +30,7 @@ From the `backend` folder:
 npm run servers
 ```
 
-This starts the API on [http://localhost:3000](http://localhost:3000/) and the client on [http://localhost:8080](http://localhost:8080/).
+This starts the API on [http://localhost:8080](http://localhost:8080/) and the client on [http://localhost:3000](http://localhost:3000/).
 
 When the client is opened on localhost it talks to the local API automatically.
 
