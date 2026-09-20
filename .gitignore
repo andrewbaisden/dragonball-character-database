@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime and build output
+dist/
+build/
+coverage/
+.nyc_output/
+.cache/
+.parcel-cache/
+.turbo/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors and tooling
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.eslintcache
